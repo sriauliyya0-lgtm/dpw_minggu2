@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Katalog Produk - Toko Kue Manis</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Link untuk melewati navigasi -->
+    <a href="#konten-utama">Lewati ke konten utama</a>
+
+    <!-- Bagian Header -->
+    <header>
+        <h1>Toko Kue Manis</h1>
+        <p>Katalog Aneka Kue Lezat</p>
+
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li><a href="index.html#tentang">Tentang Kami</a></li>
+                <li><a href="#form-kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main id="konten-utama">
+
+        <!-- Daftar Produk -->
+        <section>
+            <h2>Daftar Produk Kue</h2>
+
+            <p>
+                Berikut adalah lima produk yang tersedia
+                di Toko Kue Manis.
+            </p>
+
+            <div class="product-grid">
+
+                <article>
+                    <figure>
+                        <img src="assets/images/brownis cokelat.jpg"
+                             alt="Brownies cokelat">
+                        <figcaption>Brownies Cokelat</figcaption>
+                    </figure>
+
+                    <h3>Brownies Cokelat</h3>
+                    <p class="price">Rp25.000 / kotak</p>
+                    <p>Brownies lembut dengan rasa cokelat.</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="assets/images/donat stoberi.jpg"
+                             alt="Donat dengan topping stroberi">
+                        <figcaption>Donat Stroberi</figcaption>
+                    </figure>
+
+                    <h3>Donat Stroberi</h3>
+                    <p class="price">Rp5.000 / buah</p>
+                    <p>Donat empuk dengan topping manis.</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="assets/images/nastar.jpg"
+                             alt="Kue nastar isi selai nanas">
+                        <figcaption>Nastar Nanas</figcaption>
+                    </figure>
+
+                    <h3>Nastar Nanas</h3>
+                    <p class="price">Rp45.000 / toples</p>
+                    <p>Kue kering dengan selai nanas.</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="assets/images/cupcake.jpg"
+                             alt="Cupcake dengan hiasan krim">
+                        <figcaption>Cupcake</figcaption>
+                    </figure>
+
+                    <h3>Cupcake</h3>
+                    <p class="price">Rp8.000 / buah</p>
+                    <p>Kue mungil dengan krim lembut.</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="assets/images/bolu lapis.jpg"
+                             alt="Bolu lapis cokelat">
+                        <figcaption>Bolu Lapis</figcaption>
+                    </figure>
+
+                    <h3>Bolu Lapis</h3>
+                    <p class="price">Rp35.000 / loyang</p>
+                    <p>Bolu lembut untuk keluarga.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Tabel Harga -->
+        <section>
+            <h2>Daftar Harga Produk</h2>
+
+            <table>
+                <caption>Daftar harga Toko Kue Manis</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama Kue</th>
+                        <th scope="col">Harga</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Brownies Cokelat</td>
+                        <td>Rp25.000</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Donat Stroberi</td>
+                        <td>Rp5.000</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Nastar Nanas</td>
+                        <td>Rp45.000</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Cupcake</td>
+                        <td>Rp8.000</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Bolu Lapis</td>
+                        <td>Rp35.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Formulir Pemesanan -->
+        <section id="form-kontak">
+
+            <h2>Formulir Kontak dan Pemesanan</h2>
+
+            <p>
+                Silakan isi formulir berikut untuk mengirim
+                pertanyaan atau pesanan.
+            </p>
+
+            <form id="form-pemesanan">
+
+                <fieldset>
+                    <legend>Data Pemesan</legend>
+
+                    <label for="nama">Nama Lengkap:</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        required
+                        minlength="3"
+                        placeholder="Masukkan nama lengkap">
+
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="nama@email.com">
+
+                    <label for="telepon">Nomor Telepon:</label>
+                    <input
+                        type="tel"
+                        id="telepon"
+                        name="telepon"
+                        pattern="[0-9]{10,13}"
+                        title="Masukkan 10 sampai 13 angka"
+                        required
+                        placeholder="081234567890">
+
+                    <label for="produk">Pilih Produk:</label>
+                    <select id="produk" name="produk" required>
+
+                        <option value="">-- Pilih Kue --</option>
+                        <option value="Brownies Cokelat">Brownies Cokelat</option>
+                        <option value="Donat Stroberi">Donat Stroberi</option>
+                        <option value="Nastar Nanas">Nastar Nanas</option>
+                        <option value="Cupcake">Cupcake</option>
+                        <option value="Bolu Lapis">Bolu Lapis</option>
+
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pesan</legend>
+
+                    <label for="pesan">
+                        Pesan atau Jumlah Pesanan:
+                    </label>
+
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        required
+                        minlength="5"
+                        placeholder="Tuliskan pesan kamu"></textarea>
+                </fieldset>
+
+                <button type="submit">Kirim Pesan</button>
+
+                <!-- Tempat pesan konfirmasi -->
+                <p id="hasil-pesan"
+                   role="status"
+                   aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Toko Kue Manis.
+            Semua Hak Dilindungi.
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const form = document.querySelector("#form-pemesanan");
+        const hasil = document.querySelector("#hasil-pesan");
+
+        form.addEventListener("submit", function(event) {
+
+            // Mencegah halaman berpindah
+            event.preventDefault();
+
+            // Mengambil nama pemesan
+            const nama = document.querySelector("#nama").value;
+
+            // Menampilkan pesan berhasil
+            hasil.textContent =
+                "Terima kasih, " + nama +
+                "! Pesanan kamu berhasil dikirim.";
+
+            hasil.style.color = "green";
+            hasil.style.fontWeight = "bold";
+
+            // Mengosongkan formulir
+            form.reset();
+
+        });
+    </script>
+
+</body>
+</html>
